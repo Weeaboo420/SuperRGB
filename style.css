@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Couture-Bold;
+    src: url("couture-bld.otf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color :#FFF;
+}
+
+#master {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #000;
+    padding: 0;
+    color: rgba(0,0,0,0);
+    width: 100vw;
+    height: 100vh;
+    transition: background-color 3.5s cubic-bezier(1, 1, 1, 1);
+    text-align: center;    
+}
+
+.no-select {
+    -moz-user-select: none;
+    -ms-touch-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#text {
+    display: inline-block;
+    color: #FFF;
+    background-color: #000;
+    margin: 0;    
+    padding: 0.5em 2em;
+    font-size: 3em;
+    text-align: center;    
+    border-radius: 5em;
+    font-family: Couture-Bold;
+    transition: color 3.5s cubic-bezier(1, 1, 1, 1);
+
+}
+
+#text:hover {
+    cursor: pointer;
+}
+
+#text span {
+    font-size: 0.5em;
+    margin: 0;
+    padding: 0;
+}
